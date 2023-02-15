@@ -1,0 +1,100 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+
+}
+
+header {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)), url(HyaliteCreek.jpg);
+    background-size: cover;
+    font-family: sans-serif;
+}
+
+.logo {
+    padding-top: 25px;
+    color: aliceblue;
+    padding-left: 25px;
+}
+
+nav {
+    width: 100%;
+    height: 100px;
+    color: white;
+    padding-right: 25px;
+    display: flex;
+    align-items: center;
+    padding-left: 950px;
+    padding-bottom: 175px;
+}
+
+.logo {
+    font-size: 40px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 15px;
+    border-radius: 8px;
+    position: relative;
+}
+
+.login a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    background-color: rgba(33, 182, 205, 0.508);
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+.login a:hover {
+    border: 1px solid whitesmoke;
+    background-color: rgba(121, 160, 155, 0.508);
+
+}
+
+.text {
+    color: rgb(255, 255, 255, 0.6);
+    font-size: 40px;
+    text-align: center;
+}
+
+
+.text a {
+    text-decoration: none;
+    color: white;
+    padding: 20px 40px;
+    background-color: rgba(33, 182, 205, 0.3);
+    border-radius: 8px;
+    font-size: 30px;
+    font-weight: bold;
+
+}
+
+.text a:hover {
+    border: 1px solid whitesmoke;
+    background-color: rgba(121, 160, 155, 0.508);
+}
+
+.navbar a:before {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    border-bottom: 2px solid rgb(121, 160, 155);
+    transition: 0.5s linear;
+}
+
+.navbar a:hover::before {
+    width: 90%;
+}
